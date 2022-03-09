@@ -1,0 +1,368 @@
+Microsoft Windows [Version 10.0.19044.1526]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Lenovo>mongo
+MongoDB shell version v5.0.6
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("911ad658-1205-47af-8a8b-b9afa1506408") }
+MongoDB server version: 5.0.6
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+---
+The server generated these startup warnings when booting:
+        2022-03-07T23:04:35.878+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+---
+MongoDB Enterprise > show dbs
+admin   0.000GB
+config  0.000GB
+local   0.000GB
+MongoDB Enterprise > use assignments
+switched to db assignments
+MongoDB Enterprise > show collections
+MongoDB Enterprise > db.createCollection("users")
+{ "ok" : 1 }
+MongoDB Enterprise > db.users.insert({"first_name":"vaibhav","last_name":"ginnalwar","email":"vaibhavginnalwar@gmail.com","gender":"male","age":24})
+WriteResult({ "nInserted" : 1 })
+MongoDB Enterprise > db.users.find({})
+{ "_id" : ObjectId("62276a17bde8a9b3083fb730"), "first_name" : "vaibhav", "last_name" : "ginnalwar", "email" : "vaibhavginnalwar@gmail.com", "gender" : "male", "age" : 24 }
+MongoDB Enterprise > db.users.find({}).pretty()
+{
+        "_id" : ObjectId("62276a17bde8a9b3083fb730"),
+        "first_name" : "vaibhav",
+        "last_name" : "ginnalwar",
+        "email" : "vaibhavginnalwar@gmail.com",
+        "gender" : "male",
+        "age" : 24
+}
+MongoDB Enterprise > db.users.insertMany([{"first_name":"rahul","last_name":"rana","email":"rahulrana@gmail.com","gender":"male","age":25},{"first_name":"devyani","last_name":"chandragiriwar","email":"devyani@gmail.com","gender":"female","age":20},{"first_name":"raju","last_name":"pande","email":"rajupande@gmail.com","gender":"male","age":50},{"first_name":"devika","last_name":"dhruvedi","email":"devika@gmail.com","gender":"female","age":22},{"first_name":"swapnil","last_name":"landge","email":"swapnil@gmail","gender":"male","age":25},{"first_name":"ruchika","last_name":"jaiswar","email":"jaiswarRuchika@gmail.com","gender":"female","age":23},{"first_name":"akshay","last_name":"rode","email":"akshayrode@gmail.com","gender":"male","age":26}])
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("62276fedbde8a9b3083fb731"),
+                ObjectId("62276fedbde8a9b3083fb732"),
+                ObjectId("62276fedbde8a9b3083fb733"),
+                ObjectId("62276fedbde8a9b3083fb734"),
+                ObjectId("62276fedbde8a9b3083fb735"),
+                ObjectId("62276fedbde8a9b3083fb736"),
+                ObjectId("62276fedbde8a9b3083fb737")
+        ]
+}
+MongoDB Enterprise > db.user.find({}).pretty()
+MongoDB Enterprise > db.users.find({}).pretty()
+{
+        "_id" : ObjectId("62276a17bde8a9b3083fb730"),
+        "first_name" : "vaibhav",
+        "last_name" : "ginnalwar",
+        "email" : "vaibhavginnalwar@gmail.com",
+        "gender" : "male",
+        "age" : 24
+}
+{
+        "_id" : ObjectId("62276fedbde8a9b3083fb731"),
+        "first_name" : "rahul",
+        "last_name" : "rana",
+        "email" : "rahulrana@gmail.com",
+        "gender" : "male",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("62276fedbde8a9b3083fb732"),
+        "first_name" : "devyani",
+        "last_name" : "chandragiriwar",
+        "email" : "devyani@gmail.com",
+        "gender" : "female",
+        "age" : 20
+}
+{
+        "_id" : ObjectId("62276fedbde8a9b3083fb733"),
+        "first_name" : "raju",
+        "last_name" : "pande",
+        "email" : "rajupande@gmail.com",
+        "gender" : "male",
+        "age" : 50
+}
+{
+        "_id" : ObjectId("62276fedbde8a9b3083fb734"),
+        "first_name" : "devika",
+        "last_name" : "dhruvedi",
+        "email" : "devika@gmail.com",
+        "gender" : "female",
+        "age" : 22
+}
+{
+        "_id" : ObjectId("62276fedbde8a9b3083fb735"),
+        "first_name" : "swapnil",
+        "last_name" : "landge",
+        "email" : "swapnil@gmail",
+        "gender" : "male",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("62276fedbde8a9b3083fb736"),
+        "first_name" : "ruchika",
+        "last_name" : "jaiswar",
+        "email" : "jaiswarRuchika@gmail.com",
+        "gender" : "female",
+        "age" : 23
+}
+{
+        "_id" : ObjectId("62276fedbde8a9b3083fb737"),
+        "first_name" : "akshay",
+        "last_name" : "rode",
+        "email" : "akshayrode@gmail.com",
+        "gender" : "male",
+        "age" : 26
+}
+MongoDB Enterprise > db.users.insertMany([{"first_name":"aboli","last_name":"kelkar","email":"aboli@gmail.com","gender":"female","age":24},{"first_name":"keshav","last_name":"gaur","email":"keshavgaur@gmail.com","gender":"male","age":23}])
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("62277179bde8a9b3083fb738"),
+                ObjectId("62277179bde8a9b3083fb739")
+        ]
+}
+MongoDB Enterprise > db.users.find({}).pretty()
+{
+        "_id" : ObjectId("62276a17bde8a9b3083fb730"),
+        "first_name" : "vaibhav",
+        "last_name" : "ginnalwar",
+        "email" : "vaibhavginnalwar@gmail.com",
+        "gender" : "male",
+        "age" : 24
+}
+{
+        "_id" : ObjectId("62276fedbde8a9b3083fb731"),
+        "first_name" : "rahul",
+        "last_name" : "rana",
+        "email" : "rahulrana@gmail.com",
+        "gender" : "male",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("62276fedbde8a9b3083fb732"),
+        "first_name" : "devyani",
+        "last_name" : "chandragiriwar",
+        "email" : "devyani@gmail.com",
+        "gender" : "female",
+        "age" : 20
+}
+{
+        "_id" : ObjectId("62276fedbde8a9b3083fb733"),
+        "first_name" : "raju",
+        "last_name" : "pande",
+        "email" : "rajupande@gmail.com",
+        "gender" : "male",
+        "age" : 50
+}
+{
+        "_id" : ObjectId("62276fedbde8a9b3083fb734"),
+        "first_name" : "devika",
+        "last_name" : "dhruvedi",
+        "email" : "devika@gmail.com",
+        "gender" : "female",
+        "age" : 22
+}
+{
+        "_id" : ObjectId("62276fedbde8a9b3083fb735"),
+        "first_name" : "swapnil",
+        "last_name" : "landge",
+        "email" : "swapnil@gmail",
+        "gender" : "male",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("62276fedbde8a9b3083fb736"),
+        "first_name" : "ruchika",
+        "last_name" : "jaiswar",
+        "email" : "jaiswarRuchika@gmail.com",
+        "gender" : "female",
+        "age" : 23
+}
+{
+        "_id" : ObjectId("62276fedbde8a9b3083fb737"),
+        "first_name" : "akshay",
+        "last_name" : "rode",
+        "email" : "akshayrode@gmail.com",
+        "gender" : "male",
+        "age" : 26
+}
+{
+        "_id" : ObjectId("62277179bde8a9b3083fb738"),
+        "first_name" : "aboli",
+        "last_name" : "kelkar",
+        "email" : "aboli@gmail.com",
+        "gender" : "female",
+        "age" : 24
+}
+{
+        "_id" : ObjectId("62277179bde8a9b3083fb739"),
+        "first_name" : "keshav",
+        "last_name" : "gaur",
+        "email" : "keshavgaur@gmail.com",
+        "gender" : "male",
+        "age" : 23
+}
+MongoDB Enterprise > db.users.find({"first_name":"vaibhav"}).pretty()
+{
+        "_id" : ObjectId("62276a17bde8a9b3083fb730"),
+        "first_name" : "vaibhav",
+        "last_name" : "ginnalwar",
+        "email" : "vaibhavginnalwar@gmail.com",
+        "gender" : "male",
+        "age" : 24
+}
+MongoDB Enterprise > db.users.remove({"first_name":"keshav"})
+WriteResult({ "nRemoved" : 1 })
+MongoDB Enterprise > db.users.find({}).pretty()
+{
+        "_id" : ObjectId("62276a17bde8a9b3083fb730"),
+        "first_name" : "vaibhav",
+        "last_name" : "ginnalwar",
+        "email" : "vaibhavginnalwar@gmail.com",
+        "gender" : "male",
+        "age" : 24
+}
+{
+        "_id" : ObjectId("62276fedbde8a9b3083fb731"),
+        "first_name" : "rahul",
+        "last_name" : "rana",
+        "email" : "rahulrana@gmail.com",
+        "gender" : "male",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("62276fedbde8a9b3083fb732"),
+        "first_name" : "devyani",
+        "last_name" : "chandragiriwar",
+        "email" : "devyani@gmail.com",
+        "gender" : "female",
+        "age" : 20
+}
+{
+        "_id" : ObjectId("62276fedbde8a9b3083fb733"),
+        "first_name" : "raju",
+        "last_name" : "pande",
+        "email" : "rajupande@gmail.com",
+        "gender" : "male",
+        "age" : 50
+}
+{
+        "_id" : ObjectId("62276fedbde8a9b3083fb734"),
+        "first_name" : "devika",
+        "last_name" : "dhruvedi",
+        "email" : "devika@gmail.com",
+        "gender" : "female",
+        "age" : 22
+}
+{
+        "_id" : ObjectId("62276fedbde8a9b3083fb735"),
+        "first_name" : "swapnil",
+        "last_name" : "landge",
+        "email" : "swapnil@gmail",
+        "gender" : "male",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("62276fedbde8a9b3083fb736"),
+        "first_name" : "ruchika",
+        "last_name" : "jaiswar",
+        "email" : "jaiswarRuchika@gmail.com",
+        "gender" : "female",
+        "age" : 23
+}
+{
+        "_id" : ObjectId("62276fedbde8a9b3083fb737"),
+        "first_name" : "akshay",
+        "last_name" : "rode",
+        "email" : "akshayrode@gmail.com",
+        "gender" : "male",
+        "age" : 26
+}
+{
+        "_id" : ObjectId("62277179bde8a9b3083fb738"),
+        "first_name" : "aboli",
+        "last_name" : "kelkar",
+        "email" : "aboli@gmail.com",
+        "gender" : "female",
+        "age" : 24
+}
+MongoDB Enterprise > db.users.update({"first_name":"rahul"},{$set:{"last_name":"baghel"}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+MongoDB Enterprise > db.users.find({"first_name":"rahul"})
+{ "_id" : ObjectId("62276fedbde8a9b3083fb731"), "first_name" : "rahul", "last_name" : "baghel", "email" : "rahulrana@gmail.com", "gender" : "male", "age" : 25 }
+MongoDB Enterprise > db.users.find({"first_name":"rahul"}).pretty()
+{
+        "_id" : ObjectId("62276fedbde8a9b3083fb731"),
+        "first_name" : "rahul",
+        "last_name" : "baghel",
+        "email" : "rahulrana@gmail.com",
+        "gender" : "male",
+        "age" : 25
+}
+MongoDB Enterprise > db.users.count()
+9
+MongoDB Enterprise > db.users.remove({"gender":"female"})
+WriteResult({ "nRemoved" : 4 })
+MongoDB Enterprise > db.users.count()
+5
+MongoDB Enterprise > db.users.find({}).pretty()
+{
+        "_id" : ObjectId("62276a17bde8a9b3083fb730"),
+        "first_name" : "vaibhav",
+        "last_name" : "ginnalwar",
+        "email" : "vaibhavginnalwar@gmail.com",
+        "gender" : "male",
+        "age" : 24
+}
+{
+        "_id" : ObjectId("62276fedbde8a9b3083fb731"),
+        "first_name" : "rahul",
+        "last_name" : "baghel",
+        "email" : "rahulrana@gmail.com",
+        "gender" : "male",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("62276fedbde8a9b3083fb733"),
+        "first_name" : "raju",
+        "last_name" : "pande",
+        "email" : "rajupande@gmail.com",
+        "gender" : "male",
+        "age" : 50
+}
+{
+        "_id" : ObjectId("62276fedbde8a9b3083fb735"),
+        "first_name" : "swapnil",
+        "last_name" : "landge",
+        "email" : "swapnil@gmail",
+        "gender" : "male",
+        "age" : 25
+}
+{
+        "_id" : ObjectId("62276fedbde8a9b3083fb737"),
+        "first_name" : "akshay",
+        "last_name" : "rode",
+        "email" : "akshayrode@gmail.com",
+        "gender" : "male",
+        "age" : 26
+}
+MongoDB Enterprise > db.users.remove()
+uncaught exception: Error: remove needs a query :
+DBCollection.prototype._parseRemove@src/mongo/shell/collection.js:364:15
+DBCollection.prototype.remove@src/mongo/shell/collection.js:394:18
+@(shell):1:1
+MongoDB Enterprise > db.users.remove({})
+WriteResult({ "nRemoved" : 5 })
+MongoDB Enterprise > db.users.count()
+0
+MongoDB Enterprise > ^C
+bye
+
+C:\Users\Lenovo>
+
+C:\Users\Lenovo>
