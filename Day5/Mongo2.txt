@@ -1,0 +1,1410 @@
+Microsoft Windows [Version 10.0.19044.1526]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Lenovo>mongo
+MongoDB shell version v5.0.6
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("c5fa5ea7-8f6e-4ffc-a847-4ea2d4babd36") }
+MongoDB server version: 5.0.6
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+---
+The server generated these startup warnings when booting:
+        2022-03-08T23:17:02.334+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+---
+MongoDB Enterprise > show dbs
+admin         0.000GB
+assignments   0.000GB
+config        0.000GB
+databaseName  0.000GB
+local         0.000GB
+MongoDB Enterprise > use assignments
+switched to db assignments
+MongoDB Enterprise > db.movies.find({}).pretty()
+{
+        "_id" : ObjectId("622b977992a0821a886876ee"),
+        "id" : 1,
+        "movie_name" : "Anthony Adverse",
+        "movie_genre" : "Adventure|Romance",
+        "production_year" : 1994,
+        "budget" : 12791
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876ef"),
+        "id" : 2,
+        "movie_name" : "Carbon Nation",
+        "movie_genre" : "Documentary",
+        "production_year" : 1990,
+        "budget" : 18779
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f0"),
+        "id" : 3,
+        "movie_name" : "Brubaker",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 1994,
+        "budget" : 11196
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f1"),
+        "id" : 4,
+        "movie_name" : "Woody Allen: A Documentary",
+        "movie_genre" : "Documentary",
+        "production_year" : 2006,
+        "budget" : 9257
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f2"),
+        "id" : 5,
+        "movie_name" : "Screaming Man, A (Un homme qui crie)",
+        "movie_genre" : "Drama",
+        "production_year" : 2003,
+        "budget" : 13443
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f3"),
+        "id" : 6,
+        "movie_name" : "Johnny Express",
+        "movie_genre" : "Animation|Comedy|Sci-Fi",
+        "production_year" : 2002,
+        "budget" : 13923
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f4"),
+        "id" : 7,
+        "movie_name" : "I Spit on Your Grave (Day of the Woman)",
+        "movie_genre" : "Horror|Thriller",
+        "production_year" : 2014,
+        "budget" : 19542
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f5"),
+        "id" : 8,
+        "movie_name" : "Ringer, The",
+        "movie_genre" : "Comedy",
+        "production_year" : 2010,
+        "budget" : 14250
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f6"),
+        "id" : 9,
+        "movie_name" : "Adventures of Mark Twain, The",
+        "movie_genre" : "Adventure|Animation|Children",
+        "production_year" : 2003,
+        "budget" : 16555
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f7"),
+        "id" : 10,
+        "movie_name" : "Battle of the Year",
+        "movie_genre" : "Musical",
+        "production_year" : 1993,
+        "budget" : 10759
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f8"),
+        "id" : 11,
+        "movie_name" : "Drowning Pool, The",
+        "movie_genre" : "Mystery|Thriller",
+        "production_year" : 1993,
+        "budget" : 15399
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f9"),
+        "id" : 12,
+        "movie_name" : "The Importance of Being Earnest",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2020,
+        "budget" : 16917
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876fa"),
+        "id" : 13,
+        "movie_name" : "Hamster Factor and Other Tales of Twelve Monkeys, The",
+        "movie_genre" : "Documentary",
+        "production_year" : 2007,
+        "budget" : 17883
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876fb"),
+        "id" : 14,
+        "movie_name" : "Langoliers, The",
+        "movie_genre" : "Drama|Fantasy|Horror|Mystery|Sci-Fi|Thriller",
+        "production_year" : 1995,
+        "budget" : 11374
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876fc"),
+        "id" : 15,
+        "movie_name" : "Study in Terror, A",
+        "movie_genre" : "Crime|Drama|Horror",
+        "production_year" : 2005,
+        "budget" : 9663
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876fd"),
+        "id" : 16,
+        "movie_name" : "Thirst (a.k.a. Three Strange Loves) (Törst)",
+        "movie_genre" : "Drama",
+        "production_year" : 2004,
+        "budget" : 18160
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876fe"),
+        "id" : 17,
+        "movie_name" : "Joyful Noise",
+        "movie_genre" : "Comedy|Musical",
+        "production_year" : 1995,
+        "budget" : 16313
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876ff"),
+        "id" : 18,
+        "movie_name" : "Million Dollar Mermaid",
+        "movie_genre" : "Drama|Musical",
+        "production_year" : 2005,
+        "budget" : 9831
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687700"),
+        "id" : 19,
+        "movie_name" : "Ed's Next Move",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 1991,
+        "budget" : 13547
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687701"),
+        "id" : 20,
+        "movie_name" : "Late Marriage (Hatuna Meuheret)",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 2016,
+        "budget" : 15282
+}
+Type "it" for more
+MongoDB Enterprise > db.movies.find({movie_name:{$eq:"Joyful Noise"}}).pretty()
+{
+        "_id" : ObjectId("622b977992a0821a886876fe"),
+        "id" : 17,
+        "movie_name" : "Joyful Noise",
+        "movie_genre" : "Comedy|Musical",
+        "production_year" : 1995,
+        "budget" : 16313
+}
+MongoDB Enterprise > db.movies.find({movie_name:{$ne:"Joyful Noise"}}).pretty()
+{
+        "_id" : ObjectId("622b977992a0821a886876ee"),
+        "id" : 1,
+        "movie_name" : "Anthony Adverse",
+        "movie_genre" : "Adventure|Romance",
+        "production_year" : 1994,
+        "budget" : 12791
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876ef"),
+        "id" : 2,
+        "movie_name" : "Carbon Nation",
+        "movie_genre" : "Documentary",
+        "production_year" : 1990,
+        "budget" : 18779
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f0"),
+        "id" : 3,
+        "movie_name" : "Brubaker",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 1994,
+        "budget" : 11196
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f1"),
+        "id" : 4,
+        "movie_name" : "Woody Allen: A Documentary",
+        "movie_genre" : "Documentary",
+        "production_year" : 2006,
+        "budget" : 9257
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f2"),
+        "id" : 5,
+        "movie_name" : "Screaming Man, A (Un homme qui crie)",
+        "movie_genre" : "Drama",
+        "production_year" : 2003,
+        "budget" : 13443
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f3"),
+        "id" : 6,
+        "movie_name" : "Johnny Express",
+        "movie_genre" : "Animation|Comedy|Sci-Fi",
+        "production_year" : 2002,
+        "budget" : 13923
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f4"),
+        "id" : 7,
+        "movie_name" : "I Spit on Your Grave (Day of the Woman)",
+        "movie_genre" : "Horror|Thriller",
+        "production_year" : 2014,
+        "budget" : 19542
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f5"),
+        "id" : 8,
+        "movie_name" : "Ringer, The",
+        "movie_genre" : "Comedy",
+        "production_year" : 2010,
+        "budget" : 14250
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f6"),
+        "id" : 9,
+        "movie_name" : "Adventures of Mark Twain, The",
+        "movie_genre" : "Adventure|Animation|Children",
+        "production_year" : 2003,
+        "budget" : 16555
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f7"),
+        "id" : 10,
+        "movie_name" : "Battle of the Year",
+        "movie_genre" : "Musical",
+        "production_year" : 1993,
+        "budget" : 10759
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f8"),
+        "id" : 11,
+        "movie_name" : "Drowning Pool, The",
+        "movie_genre" : "Mystery|Thriller",
+        "production_year" : 1993,
+        "budget" : 15399
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f9"),
+        "id" : 12,
+        "movie_name" : "The Importance of Being Earnest",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2020,
+        "budget" : 16917
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876fa"),
+        "id" : 13,
+        "movie_name" : "Hamster Factor and Other Tales of Twelve Monkeys, The",
+        "movie_genre" : "Documentary",
+        "production_year" : 2007,
+        "budget" : 17883
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876fb"),
+        "id" : 14,
+        "movie_name" : "Langoliers, The",
+        "movie_genre" : "Drama|Fantasy|Horror|Mystery|Sci-Fi|Thriller",
+        "production_year" : 1995,
+        "budget" : 11374
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876fc"),
+        "id" : 15,
+        "movie_name" : "Study in Terror, A",
+        "movie_genre" : "Crime|Drama|Horror",
+        "production_year" : 2005,
+        "budget" : 9663
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876fd"),
+        "id" : 16,
+        "movie_name" : "Thirst (a.k.a. Three Strange Loves) (Törst)",
+        "movie_genre" : "Drama",
+        "production_year" : 2004,
+        "budget" : 18160
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876ff"),
+        "id" : 18,
+        "movie_name" : "Million Dollar Mermaid",
+        "movie_genre" : "Drama|Musical",
+        "production_year" : 2005,
+        "budget" : 9831
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687700"),
+        "id" : 19,
+        "movie_name" : "Ed's Next Move",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 1991,
+        "budget" : 13547
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687701"),
+        "id" : 20,
+        "movie_name" : "Late Marriage (Hatuna Meuheret)",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 2016,
+        "budget" : 15282
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687702"),
+        "id" : 21,
+        "movie_name" : "Gardens of the Night",
+        "movie_genre" : "Drama",
+        "production_year" : 2000,
+        "budget" : 16440
+}
+Type "it" for more
+MongoDB Enterprise > db.movies.find({movie_name:{$ne:"Joyful Noise"}}).pretty().count()
+499
+MongoDB Enterprise > db.movies.find({$and:[{budget:{$gt:20000}},{budget:{$gte:20000}}]}).pretty()
+MongoDB Enterprise > db.movies.find({$and:[{budget:{$gt:20000}},{budget:{$gte:20000}}]}).pretty()
+MongoDB Enterprise > db.movies.find({$and:[{budget:{$gt:20000}},{budget:{$gte:20000}}]}).pretty().count()
+0
+MongoDB Enterprise > db.movies.find({$and:[{budget:{$lt:20000}},{budget:{$lte:20000}}]}).pretty().count()
+500
+MongoDB Enterprise > db.movies.find({$and:[{budget:{$lt:9000}},{budget:{$lte:9000}}]}).pretty().count()
+0
+MongoDB Enterprise > db.movies.find({$and:[{production_year:{$gt:2000}},{budget:{$gt:10000}}]}).pretty()
+{
+        "_id" : ObjectId("622b977992a0821a886876f2"),
+        "id" : 5,
+        "movie_name" : "Screaming Man, A (Un homme qui crie)",
+        "movie_genre" : "Drama",
+        "production_year" : 2003,
+        "budget" : 13443
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f3"),
+        "id" : 6,
+        "movie_name" : "Johnny Express",
+        "movie_genre" : "Animation|Comedy|Sci-Fi",
+        "production_year" : 2002,
+        "budget" : 13923
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f4"),
+        "id" : 7,
+        "movie_name" : "I Spit on Your Grave (Day of the Woman)",
+        "movie_genre" : "Horror|Thriller",
+        "production_year" : 2014,
+        "budget" : 19542
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f5"),
+        "id" : 8,
+        "movie_name" : "Ringer, The",
+        "movie_genre" : "Comedy",
+        "production_year" : 2010,
+        "budget" : 14250
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f6"),
+        "id" : 9,
+        "movie_name" : "Adventures of Mark Twain, The",
+        "movie_genre" : "Adventure|Animation|Children",
+        "production_year" : 2003,
+        "budget" : 16555
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f9"),
+        "id" : 12,
+        "movie_name" : "The Importance of Being Earnest",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2020,
+        "budget" : 16917
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876fa"),
+        "id" : 13,
+        "movie_name" : "Hamster Factor and Other Tales of Twelve Monkeys, The",
+        "movie_genre" : "Documentary",
+        "production_year" : 2007,
+        "budget" : 17883
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876fd"),
+        "id" : 16,
+        "movie_name" : "Thirst (a.k.a. Three Strange Loves) (Törst)",
+        "movie_genre" : "Drama",
+        "production_year" : 2004,
+        "budget" : 18160
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687701"),
+        "id" : 20,
+        "movie_name" : "Late Marriage (Hatuna Meuheret)",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 2016,
+        "budget" : 15282
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687704"),
+        "id" : 23,
+        "movie_name" : "How the West Was Won",
+        "movie_genre" : "Adventure|Drama|Western",
+        "production_year" : 2001,
+        "budget" : 14241
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687705"),
+        "id" : 24,
+        "movie_name" : "Thing Called Love, The",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 2020,
+        "budget" : 14829
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687707"),
+        "id" : 26,
+        "movie_name" : "Private School",
+        "movie_genre" : "Comedy",
+        "production_year" : 2009,
+        "budget" : 19819
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687708"),
+        "id" : 27,
+        "movie_name" : "Boris and Natasha",
+        "movie_genre" : "Action|Comedy",
+        "production_year" : 2002,
+        "budget" : 18709
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687709"),
+        "id" : 28,
+        "movie_name" : "Foosball (Metegol)",
+        "movie_genre" : "Adventure|Animation|Romance",
+        "production_year" : 2017,
+        "budget" : 14489
+}
+{
+        "_id" : ObjectId("622b977992a0821a8868770c"),
+        "id" : 31,
+        "movie_name" : "Tarzan Escapes",
+        "movie_genre" : "Action|Adventure",
+        "production_year" : 2014,
+        "budget" : 18898
+}
+{
+        "_id" : ObjectId("622b977992a0821a8868770e"),
+        "id" : 33,
+        "movie_name" : "High and Dizzy",
+        "movie_genre" : "Comedy",
+        "production_year" : 2002,
+        "budget" : 13403
+}
+{
+        "_id" : ObjectId("622b977992a0821a8868770f"),
+        "id" : 34,
+        "movie_name" : "Rage of Angels: The Story Continues",
+        "movie_genre" : "Drama",
+        "production_year" : 2009,
+        "budget" : 16905
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687710"),
+        "id" : 35,
+        "movie_name" : "Love Actually",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 2016,
+        "budget" : 17555
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687712"),
+        "id" : 37,
+        "movie_name" : "Sam's Song",
+        "movie_genre" : "Drama",
+        "production_year" : 2007,
+        "budget" : 16042
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687714"),
+        "id" : 39,
+        "movie_name" : "Unlikely Weapon, An",
+        "movie_genre" : "Documentary",
+        "production_year" : 2015,
+        "budget" : 15003
+}
+Type "it" for more
+MongoDB Enterprise > db.movies.find({$or:[{production_year:{$gt:2000}},{budget:{$gt:10000}}]}).pretty()
+{
+        "_id" : ObjectId("622b977992a0821a886876ee"),
+        "id" : 1,
+        "movie_name" : "Anthony Adverse",
+        "movie_genre" : "Adventure|Romance",
+        "production_year" : 1994,
+        "budget" : 12791
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876ef"),
+        "id" : 2,
+        "movie_name" : "Carbon Nation",
+        "movie_genre" : "Documentary",
+        "production_year" : 1990,
+        "budget" : 18779
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f0"),
+        "id" : 3,
+        "movie_name" : "Brubaker",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 1994,
+        "budget" : 11196
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f1"),
+        "id" : 4,
+        "movie_name" : "Woody Allen: A Documentary",
+        "movie_genre" : "Documentary",
+        "production_year" : 2006,
+        "budget" : 9257
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f2"),
+        "id" : 5,
+        "movie_name" : "Screaming Man, A (Un homme qui crie)",
+        "movie_genre" : "Drama",
+        "production_year" : 2003,
+        "budget" : 13443
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f3"),
+        "id" : 6,
+        "movie_name" : "Johnny Express",
+        "movie_genre" : "Animation|Comedy|Sci-Fi",
+        "production_year" : 2002,
+        "budget" : 13923
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f4"),
+        "id" : 7,
+        "movie_name" : "I Spit on Your Grave (Day of the Woman)",
+        "movie_genre" : "Horror|Thriller",
+        "production_year" : 2014,
+        "budget" : 19542
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f5"),
+        "id" : 8,
+        "movie_name" : "Ringer, The",
+        "movie_genre" : "Comedy",
+        "production_year" : 2010,
+        "budget" : 14250
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f6"),
+        "id" : 9,
+        "movie_name" : "Adventures of Mark Twain, The",
+        "movie_genre" : "Adventure|Animation|Children",
+        "production_year" : 2003,
+        "budget" : 16555
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f7"),
+        "id" : 10,
+        "movie_name" : "Battle of the Year",
+        "movie_genre" : "Musical",
+        "production_year" : 1993,
+        "budget" : 10759
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f8"),
+        "id" : 11,
+        "movie_name" : "Drowning Pool, The",
+        "movie_genre" : "Mystery|Thriller",
+        "production_year" : 1993,
+        "budget" : 15399
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f9"),
+        "id" : 12,
+        "movie_name" : "The Importance of Being Earnest",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2020,
+        "budget" : 16917
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876fa"),
+        "id" : 13,
+        "movie_name" : "Hamster Factor and Other Tales of Twelve Monkeys, The",
+        "movie_genre" : "Documentary",
+        "production_year" : 2007,
+        "budget" : 17883
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876fb"),
+        "id" : 14,
+        "movie_name" : "Langoliers, The",
+        "movie_genre" : "Drama|Fantasy|Horror|Mystery|Sci-Fi|Thriller",
+        "production_year" : 1995,
+        "budget" : 11374
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876fc"),
+        "id" : 15,
+        "movie_name" : "Study in Terror, A",
+        "movie_genre" : "Crime|Drama|Horror",
+        "production_year" : 2005,
+        "budget" : 9663
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876fd"),
+        "id" : 16,
+        "movie_name" : "Thirst (a.k.a. Three Strange Loves) (Törst)",
+        "movie_genre" : "Drama",
+        "production_year" : 2004,
+        "budget" : 18160
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876fe"),
+        "id" : 17,
+        "movie_name" : "Joyful Noise",
+        "movie_genre" : "Comedy|Musical",
+        "production_year" : 1995,
+        "budget" : 16313
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876ff"),
+        "id" : 18,
+        "movie_name" : "Million Dollar Mermaid",
+        "movie_genre" : "Drama|Musical",
+        "production_year" : 2005,
+        "budget" : 9831
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687700"),
+        "id" : 19,
+        "movie_name" : "Ed's Next Move",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 1991,
+        "budget" : 13547
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687701"),
+        "id" : 20,
+        "movie_name" : "Late Marriage (Hatuna Meuheret)",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 2016,
+        "budget" : 15282
+}
+Type "it" for more
+MongoDB Enterprise > db.movies.find({$nor:[{production_year:{$gt:2000}},{budget:{$gt:10000}}]}).pretty()
+{
+        "_id" : ObjectId("622b977992a0821a88687717"),
+        "id" : 42,
+        "movie_name" : "Arthur and the Revenge of Maltazard (Arthur et la vengeance de Maltazard)",
+        "movie_genre" : "Animation|Children|Fantasy",
+        "production_year" : 1994,
+        "budget" : 9817
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687728"),
+        "id" : 59,
+        "movie_name" : "Jane Austen Book Club, The",
+        "movie_genre" : "Drama|Romance",
+        "production_year" : 1998,
+        "budget" : 9365
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687764"),
+        "id" : 119,
+        "movie_name" : "Dealin' with Idiots",
+        "movie_genre" : "Comedy",
+        "production_year" : 1995,
+        "budget" : 9306
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687778"),
+        "id" : 139,
+        "movie_name" : "No Way Home",
+        "movie_genre" : "Drama",
+        "production_year" : 1999,
+        "budget" : 9770
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687784"),
+        "id" : 151,
+        "movie_name" : "Bride of the Monster",
+        "movie_genre" : "Horror|Sci-Fi",
+        "production_year" : 1993,
+        "budget" : 9048
+}
+{
+        "_id" : ObjectId("622b977992a0821a886877a1"),
+        "id" : 180,
+        "movie_name" : "Police Academy 3: Back in Training",
+        "movie_genre" : "Comedy|Crime",
+        "production_year" : 1996,
+        "budget" : 9312
+}
+{
+        "_id" : ObjectId("622b977992a0821a886877a9"),
+        "id" : 188,
+        "movie_name" : "Deuce Bigalow: European Gigolo",
+        "movie_genre" : "Comedy",
+        "production_year" : 1990,
+        "budget" : 9823
+}
+{
+        "_id" : ObjectId("622b977992a0821a886877da"),
+        "id" : 237,
+        "movie_name" : "Lascars",
+        "movie_genre" : "Animation|Comedy",
+        "production_year" : 1992,
+        "budget" : 9550
+}
+{
+        "_id" : ObjectId("622b977992a0821a886877f0"),
+        "id" : 259,
+        "movie_name" : "Just Another Love Story (Kærlighed på film)",
+        "movie_genre" : "Crime|Drama|Thriller",
+        "production_year" : 1991,
+        "budget" : 9315
+}
+{
+        "_id" : ObjectId("622b977992a0821a886877f5"),
+        "id" : 264,
+        "movie_name" : "The Uninvited Guest",
+        "movie_genre" : "Drama|Horror|Mystery|Thriller",
+        "production_year" : 1992,
+        "budget" : 9243
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687808"),
+        "id" : 283,
+        "movie_name" : "Body of Water (Syvälle salattu)",
+        "movie_genre" : "Drama|Mystery|Thriller",
+        "production_year" : 1990,
+        "budget" : 9760
+}
+{
+        "_id" : ObjectId("622b977992a0821a8868780e"),
+        "id" : 289,
+        "movie_name" : "Invaders from Mars",
+        "movie_genre" : "Sci-Fi",
+        "production_year" : 1993,
+        "budget" : 9025
+}
+{
+        "_id" : ObjectId("622b977992a0821a8868782f"),
+        "id" : 322,
+        "movie_name" : "Boys Are Back, The",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 1994,
+        "budget" : 9745
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687846"),
+        "id" : 345,
+        "movie_name" : "Human Family Tree, The",
+        "movie_genre" : "Documentary",
+        "production_year" : 2000,
+        "budget" : 9922
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687860"),
+        "id" : 371,
+        "movie_name" : "Unstoppable",
+        "movie_genre" : "Action|Adventure|Comedy|Drama|Thriller",
+        "production_year" : 2000,
+        "budget" : 9733
+}
+{
+        "_id" : ObjectId("622b977992a0821a886878a9"),
+        "id" : 444,
+        "movie_name" : "Concrete Night (Betoniyö)",
+        "movie_genre" : "Drama",
+        "production_year" : 1997,
+        "budget" : 9271
+}
+MongoDB Enterprise > db.movies.find({$or:[{production_year:{$not:2000}},{budget:{$not:10000}}]}).pretty()
+Error: error: {
+        "ok" : 0,
+        "errmsg" : "$not needs a regex or a document",
+        "code" : 2,
+        "codeName" : "BadValue"
+}
+MongoDB Enterprise > db.movies.find({$or:[{production_year:{$ne:2000}},{budget:{$ne:10000}}]}).pretty()
+{
+        "_id" : ObjectId("622b977992a0821a886876ee"),
+        "id" : 1,
+        "movie_name" : "Anthony Adverse",
+        "movie_genre" : "Adventure|Romance",
+        "production_year" : 1994,
+        "budget" : 12791
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876ef"),
+        "id" : 2,
+        "movie_name" : "Carbon Nation",
+        "movie_genre" : "Documentary",
+        "production_year" : 1990,
+        "budget" : 18779
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f0"),
+        "id" : 3,
+        "movie_name" : "Brubaker",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 1994,
+        "budget" : 11196
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f1"),
+        "id" : 4,
+        "movie_name" : "Woody Allen: A Documentary",
+        "movie_genre" : "Documentary",
+        "production_year" : 2006,
+        "budget" : 9257
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f2"),
+        "id" : 5,
+        "movie_name" : "Screaming Man, A (Un homme qui crie)",
+        "movie_genre" : "Drama",
+        "production_year" : 2003,
+        "budget" : 13443
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f3"),
+        "id" : 6,
+        "movie_name" : "Johnny Express",
+        "movie_genre" : "Animation|Comedy|Sci-Fi",
+        "production_year" : 2002,
+        "budget" : 13923
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f4"),
+        "id" : 7,
+        "movie_name" : "I Spit on Your Grave (Day of the Woman)",
+        "movie_genre" : "Horror|Thriller",
+        "production_year" : 2014,
+        "budget" : 19542
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f5"),
+        "id" : 8,
+        "movie_name" : "Ringer, The",
+        "movie_genre" : "Comedy",
+        "production_year" : 2010,
+        "budget" : 14250
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f6"),
+        "id" : 9,
+        "movie_name" : "Adventures of Mark Twain, The",
+        "movie_genre" : "Adventure|Animation|Children",
+        "production_year" : 2003,
+        "budget" : 16555
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f7"),
+        "id" : 10,
+        "movie_name" : "Battle of the Year",
+        "movie_genre" : "Musical",
+        "production_year" : 1993,
+        "budget" : 10759
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f8"),
+        "id" : 11,
+        "movie_name" : "Drowning Pool, The",
+        "movie_genre" : "Mystery|Thriller",
+        "production_year" : 1993,
+        "budget" : 15399
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f9"),
+        "id" : 12,
+        "movie_name" : "The Importance of Being Earnest",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2020,
+        "budget" : 16917
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876fa"),
+        "id" : 13,
+        "movie_name" : "Hamster Factor and Other Tales of Twelve Monkeys, The",
+        "movie_genre" : "Documentary",
+        "production_year" : 2007,
+        "budget" : 17883
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876fb"),
+        "id" : 14,
+        "movie_name" : "Langoliers, The",
+        "movie_genre" : "Drama|Fantasy|Horror|Mystery|Sci-Fi|Thriller",
+        "production_year" : 1995,
+        "budget" : 11374
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876fc"),
+        "id" : 15,
+        "movie_name" : "Study in Terror, A",
+        "movie_genre" : "Crime|Drama|Horror",
+        "production_year" : 2005,
+        "budget" : 9663
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876fd"),
+        "id" : 16,
+        "movie_name" : "Thirst (a.k.a. Three Strange Loves) (Törst)",
+        "movie_genre" : "Drama",
+        "production_year" : 2004,
+        "budget" : 18160
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876fe"),
+        "id" : 17,
+        "movie_name" : "Joyful Noise",
+        "movie_genre" : "Comedy|Musical",
+        "production_year" : 1995,
+        "budget" : 16313
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876ff"),
+        "id" : 18,
+        "movie_name" : "Million Dollar Mermaid",
+        "movie_genre" : "Drama|Musical",
+        "production_year" : 2005,
+        "budget" : 9831
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687700"),
+        "id" : 19,
+        "movie_name" : "Ed's Next Move",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 1991,
+        "budget" : 13547
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687701"),
+        "id" : 20,
+        "movie_name" : "Late Marriage (Hatuna Meuheret)",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 2016,
+        "budget" : 15282
+}
+Type "it" for more
+MongoDB Enterprise > db.movies.find({production_year:{$in:[2000,2010]}}).pretty()
+{
+        "_id" : ObjectId("622b977992a0821a886876f5"),
+        "id" : 8,
+        "movie_name" : "Ringer, The",
+        "movie_genre" : "Comedy",
+        "production_year" : 2010,
+        "budget" : 14250
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687702"),
+        "id" : 21,
+        "movie_name" : "Gardens of the Night",
+        "movie_genre" : "Drama",
+        "production_year" : 2000,
+        "budget" : 16440
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687761"),
+        "id" : 116,
+        "movie_name" : "Innkeepers, The",
+        "movie_genre" : "Horror|Thriller",
+        "production_year" : 2010,
+        "budget" : 19091
+}
+{
+        "_id" : ObjectId("622b977992a0821a8868776c"),
+        "id" : 127,
+        "movie_name" : "Janie Jones",
+        "movie_genre" : "Drama|Musical",
+        "production_year" : 2000,
+        "budget" : 17028
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687772"),
+        "id" : 133,
+        "movie_name" : "Rush Hour 2",
+        "movie_genre" : "Action|Comedy",
+        "production_year" : 2000,
+        "budget" : 14219
+}
+{
+        "_id" : ObjectId("622b977992a0821a8868777e"),
+        "id" : 145,
+        "movie_name" : "Long Time Dead",
+        "movie_genre" : "Horror|Thriller",
+        "production_year" : 2000,
+        "budget" : 13227
+}
+{
+        "_id" : ObjectId("622b977992a0821a886877a5"),
+        "id" : 184,
+        "movie_name" : "Fighter in the Wind",
+        "movie_genre" : "Action|Drama",
+        "production_year" : 2000,
+        "budget" : 18413
+}
+{
+        "_id" : ObjectId("622b977992a0821a886877a6"),
+        "id" : 185,
+        "movie_name" : "Au Hasard Balthazar",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 2000,
+        "budget" : 17593
+}
+{
+        "_id" : ObjectId("622b977992a0821a886877be"),
+        "id" : 209,
+        "movie_name" : "Girl Next Door, The",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2010,
+        "budget" : 13350
+}
+{
+        "_id" : ObjectId("622b977992a0821a886877ea"),
+        "id" : 253,
+        "movie_name" : "Island of Lost Souls",
+        "movie_genre" : "Adventure|Horror|Romance|Sci-Fi",
+        "production_year" : 2000,
+        "budget" : 12512
+}
+{
+        "_id" : ObjectId("622b977992a0821a886877fe"),
+        "id" : 273,
+        "movie_name" : "Tom and Jerry: The Movie",
+        "movie_genre" : "Animation|Children|Comedy",
+        "production_year" : 2000,
+        "budget" : 11664
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687804"),
+        "id" : 279,
+        "movie_name" : "Mad Detective (Sun taam)",
+        "movie_genre" : "Action|Crime|Thriller",
+        "production_year" : 2000,
+        "budget" : 16940
+}
+{
+        "_id" : ObjectId("622b977992a0821a8868780f"),
+        "id" : 290,
+        "movie_name" : "Associate, The (Associé, L')",
+        "movie_genre" : "Comedy",
+        "production_year" : 2000,
+        "budget" : 19902
+}
+{
+        "_id" : ObjectId("622b977992a0821a8868783b"),
+        "id" : 334,
+        "movie_name" : "Three Brothers, The (Les trois frères)",
+        "movie_genre" : "Comedy",
+        "production_year" : 2000,
+        "budget" : 19789
+}
+{
+        "_id" : ObjectId("622b977992a0821a8868783d"),
+        "id" : 336,
+        "movie_name" : "Mongolian Ping-Pong (Lü cao di)",
+        "movie_genre" : "Comedy|Drama",
+        "production_year" : 2010,
+        "budget" : 11731
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687846"),
+        "id" : 345,
+        "movie_name" : "Human Family Tree, The",
+        "movie_genre" : "Documentary",
+        "production_year" : 2000,
+        "budget" : 9922
+}
+{
+        "_id" : ObjectId("622b977992a0821a8868784d"),
+        "id" : 352,
+        "movie_name" : "Beaver Trilogy Part IV",
+        "movie_genre" : "Documentary",
+        "production_year" : 2010,
+        "budget" : 11917
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687860"),
+        "id" : 371,
+        "movie_name" : "Unstoppable",
+        "movie_genre" : "Action|Adventure|Comedy|Drama|Thriller",
+        "production_year" : 2000,
+        "budget" : 9733
+}
+{
+        "_id" : ObjectId("622b977992a0821a8868786c"),
+        "id" : 383,
+        "movie_name" : "Hitler's Stealth Fighter",
+        "movie_genre" : "Documentary",
+        "production_year" : 2010,
+        "budget" : 14710
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687871"),
+        "id" : 388,
+        "movie_name" : "Four Christmases",
+        "movie_genre" : "Comedy",
+        "production_year" : 2010,
+        "budget" : 11833
+}
+Type "it" for more
+MongoDB Enterprise > it
+{
+        "_id" : ObjectId("622b977992a0821a88687892"),
+        "id" : 421,
+        "movie_name" : "Earth Days",
+        "movie_genre" : "Documentary",
+        "production_year" : 2010,
+        "budget" : 10464
+}
+{
+        "_id" : ObjectId("622b977992a0821a8868789c"),
+        "id" : 431,
+        "movie_name" : "Paranormal Activity: The Marked Ones",
+        "movie_genre" : "Horror|Thriller",
+        "production_year" : 2000,
+        "budget" : 19540
+}
+{
+        "_id" : ObjectId("622b977992a0821a886878ab"),
+        "id" : 446,
+        "movie_name" : "Male Domination",
+        "movie_genre" : "Documentary",
+        "production_year" : 2010,
+        "budget" : 19266
+}
+MongoDB Enterprise > db.movies.find({}).sort({production_year:-1},{movie_name:1}).pretty()
+{
+        "_id" : ObjectId("622b977992a0821a886876f9"),
+        "id" : 12,
+        "movie_name" : "The Importance of Being Earnest",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2020,
+        "budget" : 16917
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687705"),
+        "id" : 24,
+        "movie_name" : "Thing Called Love, The",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 2020,
+        "budget" : 14829
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687735"),
+        "id" : 72,
+        "movie_name" : "Fighting Temptations, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2020,
+        "budget" : 10967
+}
+{
+        "_id" : ObjectId("622b977992a0821a8868776a"),
+        "id" : 125,
+        "movie_name" : "Branded",
+        "movie_genre" : "Action|Drama|Mystery|Sci-Fi",
+        "production_year" : 2020,
+        "budget" : 11210
+}
+{
+        "_id" : ObjectId("622b977992a0821a886877b5"),
+        "id" : 200,
+        "movie_name" : "Wrong Turn 2: Dead End",
+        "movie_genre" : "Action|Horror|Thriller",
+        "production_year" : 2020,
+        "budget" : 14207
+}
+{
+        "_id" : ObjectId("622b977992a0821a886877b8"),
+        "id" : 203,
+        "movie_name" : "Masseurs and a Woman, The (Anma to onna)",
+        "movie_genre" : "Drama",
+        "production_year" : 2020,
+        "budget" : 17037
+}
+{
+        "_id" : ObjectId("622b977992a0821a886877c7"),
+        "id" : 218,
+        "movie_name" : "At Middleton",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2020,
+        "budget" : 15837
+}
+{
+        "_id" : ObjectId("622b977992a0821a886877df"),
+        "id" : 242,
+        "movie_name" : "Adventures of Robin Hood, The",
+        "movie_genre" : "Action|Adventure|Romance",
+        "production_year" : 2020,
+        "budget" : 11379
+}
+{
+        "_id" : ObjectId("622b977992a0821a886877ec"),
+        "id" : 255,
+        "movie_name" : "Scapegoat, The",
+        "movie_genre" : "Drama",
+        "production_year" : 2020,
+        "budget" : 14181
+}
+{
+        "_id" : ObjectId("622b977992a0821a886877f3"),
+        "id" : 262,
+        "movie_name" : "Fairly Odd Christmas, A",
+        "movie_genre" : "Children|Fantasy",
+        "production_year" : 2020,
+        "budget" : 19792
+}
+{
+        "_id" : ObjectId("622b977992a0821a886877fb"),
+        "id" : 270,
+        "movie_name" : "Is Anybody There?",
+        "movie_genre" : "Drama",
+        "production_year" : 2020,
+        "budget" : 10074
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687812"),
+        "id" : 293,
+        "movie_name" : "Snowball Express",
+        "movie_genre" : "Children|Comedy",
+        "production_year" : 2020,
+        "budget" : 18503
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687816"),
+        "id" : 297,
+        "movie_name" : "Mickey One",
+        "movie_genre" : "Crime|Drama",
+        "production_year" : 2020,
+        "budget" : 18090
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687866"),
+        "id" : 377,
+        "movie_name" : "The Disembodied",
+        "movie_genre" : "Horror",
+        "production_year" : 2020,
+        "budget" : 19994
+}
+{
+        "_id" : ObjectId("622b977992a0821a886878c8"),
+        "id" : 475,
+        "movie_name" : "Wedding Photographer, The (Bröllopsfotografen)",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "production_year" : 2020,
+        "budget" : 12940
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687713"),
+        "id" : 38,
+        "movie_name" : "Penguins of Madagascar",
+        "movie_genre" : "Adventure|Animation|Children|Comedy",
+        "production_year" : 2019,
+        "budget" : 9410
+}
+{
+        "_id" : ObjectId("622b977992a0821a8868771e"),
+        "id" : 49,
+        "movie_name" : "Daylight Robbery",
+        "movie_genre" : "Crime|Drama|Thriller",
+        "production_year" : 2019,
+        "budget" : 17730
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687721"),
+        "id" : 52,
+        "movie_name" : "Horror Planet (a.k.a. Inseminoid)",
+        "movie_genre" : "Action|Drama|Horror|Sci-Fi",
+        "production_year" : 2019,
+        "budget" : 15471
+}
+{
+        "_id" : ObjectId("622b977992a0821a8868772e"),
+        "id" : 65,
+        "movie_name" : "Kiss the Girls",
+        "movie_genre" : "Crime|Drama|Mystery|Thriller",
+        "production_year" : 2019,
+        "budget" : 12482
+}
+{
+        "_id" : ObjectId("622b977992a0821a88687752"),
+        "id" : 101,
+        "movie_name" : "Point Break",
+        "movie_genre" : "Action|Crime|Thriller",
+        "production_year" : 2019,
+        "budget" : 12932
+}
+Type "it" for more
+MongoDB Enterprise > db.movies.find({}).skip(10).limit(5).pretty()
+{
+        "_id" : ObjectId("622b977992a0821a886876f8"),
+        "id" : 11,
+        "movie_name" : "Drowning Pool, The",
+        "movie_genre" : "Mystery|Thriller",
+        "production_year" : 1993,
+        "budget" : 15399
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876f9"),
+        "id" : 12,
+        "movie_name" : "The Importance of Being Earnest",
+        "movie_genre" : "Comedy|Romance",
+        "production_year" : 2020,
+        "budget" : 16917
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876fa"),
+        "id" : 13,
+        "movie_name" : "Hamster Factor and Other Tales of Twelve Monkeys, The",
+        "movie_genre" : "Documentary",
+        "production_year" : 2007,
+        "budget" : 17883
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876fb"),
+        "id" : 14,
+        "movie_name" : "Langoliers, The",
+        "movie_genre" : "Drama|Fantasy|Horror|Mystery|Sci-Fi|Thriller",
+        "production_year" : 1995,
+        "budget" : 11374
+}
+{
+        "_id" : ObjectId("622b977992a0821a886876fc"),
+        "id" : 15,
+        "movie_name" : "Study in Terror, A",
+        "movie_genre" : "Crime|Drama|Horror",
+        "production_year" : 2005,
+        "budget" : 9663
+}
+MongoDB Enterprise > db.movies.find({}).remove(10).pretty()
+uncaught exception: TypeError: db.movies.find(...).remove is not a function :
+@(shell):1:1
+MongoDB Enterprise > db.movies.remove(10).pretty()
+uncaught exception: Error: don't know how to massage : number :
+DBCollection.prototype._massageObject@src/mongo/shell/collection.js:215:11
+DBCollection.prototype._parseRemove@src/mongo/shell/collection.js:366:17
+DBCollection.prototype.remove@src/mongo/shell/collection.js:394:18
+@(shell):1:1
+MongoDB Enterprise > db.movies.remove(10)
+uncaught exception: Error: don't know how to massage : number :
+DBCollection.prototype._massageObject@src/mongo/shell/collection.js:215:11
+DBCollection.prototype._parseRemove@src/mongo/shell/collection.js:366:17
+DBCollection.prototype.remove@src/mongo/shell/collection.js:394:18
+@(shell):1:1
+MongoDB Enterprise > db.movies.remove(10)
+uncaught exception: Error: don't know how to massage : number :
+DBCollection.prototype._massageObject@src/mongo/shell/collection.js:215:11
+DBCollection.prototype._parseRemove@src/mongo/shell/collection.js:366:17
+DBCollection.prototype.remove@src/mongo/shell/collection.js:394:18
+@(shell):1:1
+MongoDB Enterprise > db.movies.remove({10})
+uncaught exception: SyntaxError: missing : after property id :
+@(shell):1:20
+MongoDB Enterprise >
+
+
+
